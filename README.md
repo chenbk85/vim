@@ -13,4 +13,4 @@ Enjoy!
 
 If you think this is useful for you, buy me a :beer:
 
-![vim.png]
+![vim](./vim.png)
