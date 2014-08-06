@@ -12,3 +12,5 @@ If you want to use it, follow this instructions:
 Enjoy!
 
 If you think this is useful for you, buy me a :beer:
+
+![vim.png]
