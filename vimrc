@@ -88,3 +88,4 @@ au BufRead,BufNewFile *.go set filetype=go
 
 " JSON format
 map <leader>jt  <Esc>:%!json_xs -f json -t json-pretty<CR>
+au BufRead,BufNewFile *.json set filetype=json
