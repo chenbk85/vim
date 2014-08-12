@@ -85,3 +85,6 @@ let g:NeatStatusLine_color_insert = 'guifg=#ffffff guibg=#ff0000 gui=bold ctermf
 
 " Go Syntax
 au BufRead,BufNewFile *.go set filetype=go
+
+" JSON format
+map <leader>jt  <Esc>:%!json_xs -f json -t json-pretty<CR>
