@@ -6,7 +6,7 @@ My .vim files
 If you want to use it, follow this instructions:
 
 1. `git clone https://github.com/boris/vim.git ~/.vim`
-2. `cp ~/.vim/vimrc ~/.vimrc`
+2. `ln -s ~/.vim/vimrc ~/.vimrc`
 3. `vim +PluginInstall +qall`
 
 Enjoy!
