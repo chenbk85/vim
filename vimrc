@@ -1,5 +1,6 @@
 set nocompatible
 filetype off
+set noshowmode
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -10,10 +11,13 @@ Plugin 'Lokaltog/vim-powerline'
 Plugin 'bling/vim-airline'
 Plugin 'maciakl/vim-neatstatus'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'flazz/vim-colorschemes'
 
 call vundle#end()
-filetype plugin indent on
-
+"filetype plugin indent on
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 
 "lo basico
 runtime! debian.vim
@@ -32,6 +36,11 @@ set smartcase
 set ruler
 set number
 
+" Cambia en font en GUI
+if has('gui_running')
+  set guifont=Meslo_LG_M_DZ_Regular_for_Powerline:h11
+endif
+
 "muestra 5 lineas arriba y abajo
 set scrolloff=5
 
@@ -39,8 +48,8 @@ set scrolloff=5
 set sidescrolloff=5
 
 "define el "tab" a 4 caracteres
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 
 "busqueda a medida que escribes
 set incsearch
@@ -53,11 +62,8 @@ filetype plugin on
 "hightlights
 set cul
 set cursorline
-hi StatusLine ctermbg=none ctermfg=grey
-
-"vim-airline
-"let g:airline_powerline_fonts = 1
-"let g:airline#extensions#tabline#enabled = 1
+highlight CursorLine term=underline guibg=#3b3b3b
+hi StatusLine ctermbg=blue ctermfg=grey
 
 "deshabilita cualquier tipo de sonido de error
 set noerrorbells
@@ -77,15 +83,11 @@ nnoremap <F5> :GundoToggle<CR>
 "Powerline
 let g:Powerline_symbols = 'fancy'
 
-"Markdown syntax
-"autocmd BufNewFile,BufReadPost *.md set filetype=markdown
-
-" Neat status
-let g:NeatStatusLine_color_insert = 'guifg=#ffffff guibg=#ff0000 gui=bold ctermfg=15 ctermbg=9 cterm=bold'
-
 " Go Syntax
 au BufRead,BufNewFile *.go set filetype=go
 
+" ctrlp plugin
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 " JSON format
 map <leader>jt  <Esc>:%!json_xs -f json -t json-pretty<CR>
-au BufRead,BufNewFile *.json set filetype=json
