@@ -7,19 +7,22 @@ call vundle#begin()
 
 Plugin 'gmarik/vundle'
 Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
 Plugin 'Lokaltog/vim-powerline'
-Plugin 'bling/vim-airline'
-Plugin 'maciakl/vim-neatstatus'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'Bling/vim-airline'
 
 call vundle#end()
+
 "filetype plugin indent on
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 
 "lo basico
+set encoding=utf-8
 runtime! debian.vim
 if has("syntax")
    syntax on
@@ -76,9 +79,8 @@ autocmd VimEnter * NERDTree
 let g:NERDTreeDirArrows=1
 map <F2> :NERDTreeToggle<CR>
 let NERDTreeShowBookmarks=1
+let NERDTreeIgnore = ['\.swp$']
 
-"gundo
-nnoremap <F5> :GundoToggle<CR>
 
 "Powerline
 let g:Powerline_symbols = 'fancy'
