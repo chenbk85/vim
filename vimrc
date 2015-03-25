@@ -28,7 +28,7 @@ if has("syntax")
    syntax on
 endif
 
-colorscheme solarized
+colorscheme jellybeans
 set mouse=a
 set background=dark
 set ai
@@ -38,6 +38,7 @@ set ignorecase
 set smartcase
 set ruler
 set number
+set title
 
 " Cambia en font en GUI
 if has('gui_running')
