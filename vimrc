@@ -13,6 +13,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'Bling/vim-airline'
+Plugin 'cohama/lexima.vim'
 
 call vundle#end()
 
