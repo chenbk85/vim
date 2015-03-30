@@ -14,6 +14,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'Bling/vim-airline'
 Plugin 'cohama/lexima.vim'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 call vundle#end()
 
