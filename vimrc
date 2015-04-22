@@ -41,10 +41,13 @@ set smartcase
 set ruler
 set number
 set title
+set textwidth=80
+set formatoptions+=t
 
 " Cambia en font en GUI
 if has('gui_running')
   set guifont=Meslo_LG_M_DZ_Regular_for_Powerline:h11
+
 endif
 
 "muestra 5 lineas arriba y abajo
@@ -70,6 +73,7 @@ set cul
 set cursorline
 highlight CursorLine term=underline guibg=#3b3b3b
 hi StatusLine ctermbg=blue ctermfg=grey
+set colorcolumn=80,81
 
 "deshabilita cualquier tipo de sonido de error
 set noerrorbells
@@ -83,7 +87,6 @@ let g:NERDTreeDirArrows=1
 map <F2> :NERDTreeToggle<CR>
 let NERDTreeShowBookmarks=1
 let NERDTreeIgnore = ['\.swp$']
-
 
 "Powerline
 let g:Powerline_symbols = 'fancy'
