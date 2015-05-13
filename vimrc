@@ -30,6 +30,10 @@ if has("syntax")
    syntax on
 endif
 
+"Primary colors
+"set t_Co=256
+"colorscheme primary
+
 colorscheme jellybeans
 set mouse=a
 set background=dark
