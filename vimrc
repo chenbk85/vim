@@ -34,7 +34,7 @@ endif
 "set t_Co=256
 "colorscheme primary
 
-colorscheme jellybeans
+colorscheme solarized
 set mouse=a
 set background=dark
 set ai
@@ -52,7 +52,7 @@ set formatoptions+=t
 " Cambia en font en GUI
 if has('gui_running')
   set guifont=Meslo_LG_M_DZ_Regular_for_Powerline:h11
-  "set guifont=Source\ Code\ Pro:h11
+  colorscheme codeschool
 endif
 
 "muestra 5 lineas arriba y abajo
