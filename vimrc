@@ -51,7 +51,8 @@ set formatoptions+=t
 
 " Cambia en font en GUI
 if has('gui_running')
-  set guifont=Meslo_LG_M_DZ_Regular_for_Powerline:h11
+  "set guifont=Meslo_LG_M_DZ_Regular_for_Powerline:h11
+  set guifont=Source\ Code\ Pro:h12
   colorscheme codeschool
 endif
 
