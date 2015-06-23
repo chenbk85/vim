@@ -1,6 +1,6 @@
 set nocompatible
 filetype off
-set noshowmode
+"set noshowmode
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -12,13 +12,12 @@ Plugin 'Lokaltog/vim-powerline'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'Bling/vim-airline'
+Plugin 'bling/vim-airline'
 Plugin 'cohama/lexima.vim'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 call vundle#end()
+filetype plugin indent on
 
-"filetype plugin indent on
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
@@ -29,10 +28,6 @@ runtime! debian.vim
 if has("syntax")
    syntax on
 endif
-
-"Primary colors
-"set t_Co=256
-"colorscheme primary
 
 colorscheme solarized
 set mouse=a
@@ -95,7 +90,7 @@ let NERDTreeShowBookmarks=1
 let NERDTreeIgnore = ['\.swp$']
 
 "Powerline
-let g:Powerline_symbols = 'fancy'
+"let g:Powerline_symbols = 'fancy'
 
 " Go Syntax
 au BufRead,BufNewFile *.go set filetype=go
@@ -105,3 +100,5 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " JSON format
 map <leader>jt  <Esc>:%!json_xs -f json -t json-pretty<CR>
+
+let g:airline_powerline_fonts = 1
