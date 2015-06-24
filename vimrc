@@ -1,6 +1,6 @@
 set nocompatible
 filetype off
-"set noshowmode
+set noshowmode
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -23,7 +23,7 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 
 "lo basico
-set encoding=utf-8
+set encoding=utf-8 nobomb
 runtime! debian.vim
 if has("syntax")
    syntax on
@@ -43,11 +43,10 @@ set title
 set textwidth=80
 set formatoptions+=t
 
-
 " Cambia en font en GUI
 if has('gui_running')
-  "set guifont=Meslo_LG_M_DZ_Regular_for_Powerline:h11
-  set guifont=Source\ Code\ Pro:h12
+  set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h12
+  "set guifont=Source\ Code\ Pro\ for\ Powerline:h12
   colorscheme codeschool
 endif
 
@@ -90,7 +89,7 @@ let NERDTreeShowBookmarks=1
 let NERDTreeIgnore = ['\.swp$']
 
 "Powerline
-"let g:Powerline_symbols = 'fancy'
+let g:Powerline_symbols = 'fancy'
 
 " Go Syntax
 au BufRead,BufNewFile *.go set filetype=go
@@ -101,4 +100,6 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 " JSON format
 map <leader>jt  <Esc>:%!json_xs -f json -t json-pretty<CR>
 
-let g:airline_powerline_fonts = 1
+" Airline
+set laststatus=2
+let g:airline_powerline_fonts=1
