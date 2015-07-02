@@ -14,6 +14,8 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'bling/vim-airline'
 Plugin 'cohama/lexima.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()
 filetype plugin indent on
