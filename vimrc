@@ -8,7 +8,6 @@ call vundle#begin()
 Plugin 'gmarik/vundle'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
-Plugin 'Lokaltog/vim-powerline'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'kchmck/vim-coffee-script'
@@ -91,7 +90,7 @@ let NERDTreeShowBookmarks=1
 let NERDTreeIgnore = ['\.swp$']
 
 "Powerline
-let g:Powerline_symbols = 'fancy'
+"let g:Powerline_symbols = 'fancy'
 
 " Go Syntax
 au BufRead,BufNewFile *.go set filetype=go
@@ -103,5 +102,5 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 map <leader>jt  <Esc>:%!json_xs -f json -t json-pretty<CR>
 
 " Airline
-set laststatus=2
+"set laststatus=2
 let g:airline_powerline_fonts=1
