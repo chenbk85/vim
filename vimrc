@@ -104,3 +104,9 @@ map <leader>jt  <Esc>:%!json_xs -f json -t json-pretty<CR>
 " Airline
 "set laststatus=2
 let g:airline_powerline_fonts=1
+
+" CtrlP
+let g:ctrlp_working_path_mode = 'c'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_user_command = 'find %s -type f'
+let g:ctrlp_show_hidden = 1
