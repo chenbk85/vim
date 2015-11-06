@@ -83,11 +83,15 @@ set t_vb=
 
 set backspace=indent,eol,start
 
+" NERDTree
 autocmd VimEnter * NERDTree
 let g:NERDTreeDirArrows=1
 map <F2> :NERDTreeToggle<CR>
 let NERDTreeShowBookmarks=1
 let NERDTreeIgnore = ['\.swp$']
+let g:NERDTreeDirArrows = 1
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
 
 "Powerline
 "let g:Powerline_symbols = 'fancy'
@@ -110,3 +114,7 @@ let g:ctrlp_working_path_mode = 'c'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_user_command = 'find %s -type f'
 let g:ctrlp_show_hidden = 1
+
+" Show invisible
+set list
+set listchars=tab:>·,eol:¬
