@@ -84,9 +84,8 @@ set t_vb=
 set backspace=indent,eol,start
 
 " NERDTree
-autocmd VimEnter * NERDTree
-let g:NERDTreeDirArrows=1
-map <F2> :NERDTreeToggle<CR>
+"autocmd VimEnter * NERDTree
+map <C-q> :NERDTreeToggle<CR>
 let NERDTreeShowBookmarks=1
 let NERDTreeIgnore = ['\.swp$']
 let g:NERDTreeDirArrows = 1
@@ -107,7 +106,11 @@ map <leader>jt  <Esc>:%!json_xs -f json -t json-pretty<CR>
 
 " Airline
 "set laststatus=2
+let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts=1
+"" Move between buffers
+map <C-l> :bn<CR>
+map <C-h> :bp<CR>
 
 " CtrlP
 let g:ctrlp_working_path_mode = 'c'
@@ -115,6 +118,3 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 let g:ctrlp_user_command = 'find %s -type f'
 let g:ctrlp_show_hidden = 1
 
-" Show invisible
-set list
-set listchars=tab:>·,eol:¬
