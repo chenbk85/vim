@@ -108,6 +108,7 @@ map <leader>jt  <Esc>:%!json_xs -f json -t json-pretty<CR>
 "set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts=1
+let g:airline_theme='solarized'
 "" Move between buffers
 map <C-l> :bn<CR>
 map <C-h> :bp<CR>
