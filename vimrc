@@ -49,6 +49,7 @@ if has('gui_running')
   "set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h12
   set guifont=Source\ Code\ Pro\ for\ Powerline:h12
   colorscheme codeschool
+  map <C-q> :NERDTreeToggle<CR>
 endif
 
 "muestra 5 lineas arriba y abajo
@@ -85,7 +86,7 @@ set backspace=indent,eol,start
 
 " NERDTree
 "autocmd VimEnter * NERDTree
-map <C-q> :NERDTreeToggle<CR>
+map <F2> :NERDTreeToggle<CR> # Toggle NerdTree with F2 on CLI
 let NERDTreeShowBookmarks=1
 let NERDTreeIgnore = ['\.swp$']
 let g:NERDTreeDirArrows = 1
