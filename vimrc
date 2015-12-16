@@ -92,6 +92,8 @@ let NERDTreeIgnore = ['\.swp$']
 let g:NERDTreeDirArrows = 1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
+set guioptions-=r
+set guioptions-=L
 
 "Powerline
 "let g:Powerline_symbols = 'fancy'
