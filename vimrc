@@ -46,8 +46,8 @@ set formatoptions+=t
 
 " Cambia en font en GUI
 if has('gui_running')
-  "set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h12
-  set guifont=Source\ Code\ Pro\ for\ Powerline:h12
+  set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h12
+  "set guifont=Source\ Code\ Pro\ for\ Powerline:h12
   colorscheme codeschool
   map <C-q> :NERDTreeToggle<CR>
 endif
