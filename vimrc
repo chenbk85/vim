@@ -15,6 +15,7 @@ Plugin 'bling/vim-airline'
 Plugin 'cohama/lexima.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'elzr/vim-json'
 
 call vundle#end()
 filetype plugin indent on
