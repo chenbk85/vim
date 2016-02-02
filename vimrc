@@ -106,7 +106,7 @@ au BufRead,BufNewFile *.go set filetype=go
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " JSON format
-map <leader>jt  <Esc>:%!json_xs -f json -t json-pretty<CR>
+map <leader>jj <Esc>:%!python -m json.tool<CR>
 
 " Airline
 "set laststatus=2
