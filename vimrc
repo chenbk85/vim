@@ -12,10 +12,11 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'bling/vim-airline'
-Plugin 'cohama/lexima.vim'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'elzr/vim-json'
+Plugin 'ekalinin/Dockerfile.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -47,8 +48,8 @@ set formatoptions+=t
 
 " Cambia en font en GUI
 if has('gui_running')
-  set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h12
-  "set guifont=Source\ Code\ Pro\ for\ Powerline:h12
+  "set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h12
+  set guifont=Source\ Code\ Pro:h12
   colorscheme codeschool
   map <C-q> :NERDTreeToggle<CR>
 endif
