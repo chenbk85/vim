@@ -18,6 +18,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'elzr/vim-json'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'vim-ruby/vim-ruby'
 
 call vundle#end()
 filetype plugin indent on
