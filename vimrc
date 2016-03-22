@@ -21,6 +21,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'JamshedVesuna/vim-markdown-preview'
 
 call vundle#end()
 filetype plugin indent on
@@ -130,3 +131,6 @@ let g:ctrlp_show_hidden = 1
 
 " Markdown
 let g:vim_markdown_folding_disabled = 1
+let vim_markdown_preview_hotkey='<C-m>'
+let vim_markdown_preview_temp_file=1
+
