@@ -53,8 +53,7 @@ set formatoptions+=t
 
 " Cambia en font en GUI
 if has('gui_running')
-  "set guifont=Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h12
-  set guifont=Source\ Code\ Pro:h12
+  set guifont="Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h12"
   colorscheme codeschool
   map <C-q> :NERDTreeToggle<CR>
 endif
@@ -101,6 +100,8 @@ let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 set guioptions-=r
 set guioptions-=L
+set swapfile
+set dir=/tmp
 
 "Powerline
 "let g:Powerline_symbols = 'fancy'
