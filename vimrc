@@ -2,7 +2,7 @@ set nocompatible
 filetype off
 set noshowmode
 
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=/home/boris/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/vundle'
@@ -22,6 +22,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'JamshedVesuna/vim-markdown-preview'
+Plugin 'dracula/vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -37,9 +38,9 @@ if has("syntax")
    syntax on
 endif
 
-colorscheme solarized
+let g:solarized_termcolors=256
+set t_Co=256
 set mouse=a
-set background=dark
 set ai
 set hlsearch
 set showmatch
@@ -53,9 +54,13 @@ set formatoptions+=t
 
 " Cambia en font en GUI
 if has('gui_running')
-  set guifont="Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h12"
+  set background=light
+  set guifont="Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h10"
   colorscheme codeschool
   map <C-q> :NERDTreeToggle<CR>
+else
+  set background=dark
+  colorscheme jellybeans
 endif
 
 "muestra 5 lineas arriba y abajo
