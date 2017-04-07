@@ -4,8 +4,9 @@ set noshowmode
 
 set rtp+=/home/boris/.vim/bundle/Vundle.vim
 call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'gmarik/vundle'
+"Plugin 'gmarik/vundle'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
@@ -97,7 +98,7 @@ set backspace=indent,eol,start
 
 " NERDTree
 "autocmd VimEnter * NERDTree
-map <F2> :NERDTreeToggle<CR> # Toggle NerdTree with F2 on CLI
+map <F2> :NERDTreeToggle<CR>
 let NERDTreeShowBookmarks=1
 let NERDTreeIgnore = ['\.swp$']
 let g:NERDTreeDirArrows = 1
