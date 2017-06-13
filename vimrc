@@ -2,7 +2,7 @@ set nocompatible
 filetype off
 set noshowmode
 
-set rtp+=/home/boris/.vim/bundle/Vundle.vim
+set rtp+=/Users/boris/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
@@ -39,7 +39,7 @@ if has("syntax")
    syntax on
 endif
 
-let g:solarized_termcolors=256
+let g:solarized_termcolors=16
 set t_Co=256
 set mouse=a
 set ai
@@ -61,7 +61,7 @@ if has('gui_running')
   map <C-q> :NERDTreeToggle<CR>
 else
   set background=dark
-  colorscheme jellybeans
+  colorscheme solarized
 endif
 
 "muestra 5 lineas arriba y abajo
@@ -104,6 +104,7 @@ let NERDTreeIgnore = ['\.swp$']
 let g:NERDTreeDirArrows = 1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
+let g:NERDTreeGlyphReadOnly = "RO"
 set guioptions-=r
 set guioptions-=L
 set swapfile
