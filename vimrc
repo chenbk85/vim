@@ -39,8 +39,8 @@ if has("syntax")
    syntax on
 endif
 
-let g:solarized_termcolors=256
-set t_Co=256
+"let g:solarized_termcolors=256
+set t_Co=16
 set mouse=a
 set ai
 set hlsearch
@@ -61,7 +61,7 @@ if has('gui_running')
   map <C-q> :NERDTreeToggle<CR>
 else
   set background=dark
-  colorscheme jellybeans
+  colorscheme solarized
 endif
 
 "muestra 5 lineas arriba y abajo
