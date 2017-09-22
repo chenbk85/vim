@@ -19,11 +19,12 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'elzr/vim-json'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'vim-ruby/vim-ruby'
+"Plugin 'vim-ruby/vim-ruby'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'dracula/vim'
+"Plugin 'sheerun/vim-polyglot'
 
 call vundle#end()
 filetype plugin indent on
@@ -55,8 +56,8 @@ set formatoptions+=t
 
 " Cambia en font en GUI
 if has('gui_running')
-  set background=light
-  set guifont="Meslo\ LG\ M\ DZ\ Regular\ for\ Powerline:h10"
+  set background=dark
+  set guifont=Source\ Code\ Pro:h10
   colorscheme codeschool
   map <C-q> :NERDTreeToggle<CR>
 else
@@ -70,7 +71,7 @@ set scrolloff=5
 "muestra 5 columnas a izq. y derecha
 set sidescrolloff=5
 
-"define el "tab" a 4 caracteres
+"define el "tab" a 4 espacios
 set shiftwidth=2
 set softtabstop=2
 
@@ -141,4 +142,5 @@ let g:ctrlp_show_hidden = 1
 let g:vim_markdown_folding_disabled = 1
 let vim_markdown_preview_hotkey='<C-m>'
 let vim_markdown_preview_temp_file=1
-
+let vim_markdown_preview_github=1
+let vim_markdown_preview_browser='Google Chrome'
