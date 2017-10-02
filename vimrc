@@ -72,8 +72,8 @@ set scrolloff=5
 set sidescrolloff=5
 
 "define el "tab" a 4 espacios
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=4
+set softtabstop=4
 
 "busqueda a medida que escribes
 set incsearch
@@ -112,7 +112,7 @@ set swapfile
 set dir=/tmp
 
 "Powerline
-"let g:Powerline_symbols = 'fancy'
+let g:Powerline_symbols = 'fancy'
 
 " Go Syntax
 au BufRead,BufNewFile *.go set filetype=go
