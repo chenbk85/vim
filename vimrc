@@ -2,7 +2,7 @@ set nocompatible
 filetype off
 set noshowmode
 
-set rtp+=/Users/boris/.vim/bundle/Vundle.vim
+set rtp+=/home/boris/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
