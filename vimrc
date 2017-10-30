@@ -52,7 +52,7 @@ set ruler
 set number
 set title
 set textwidth=80
-set formatoptions+=t
+set formatoptions-=t
 
 " Cambia en font en GUI
 if has('gui_running')
@@ -62,7 +62,7 @@ if has('gui_running')
   map <C-q> :NERDTreeToggle<CR>
 else
   set background=dark
-  colorscheme solarized
+  colorscheme jellybeans
 endif
 
 "muestra 5 lineas arriba y abajo
