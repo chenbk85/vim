@@ -62,7 +62,7 @@ if has('gui_running')
   map <C-q> :NERDTreeToggle<CR>
 else
   set background=dark
-  colorscheme jellybeans
+  colorscheme gruvbox
 endif
 
 "muestra 5 lineas arriba y abajo
