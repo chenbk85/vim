@@ -1,6 +1,7 @@
 set nocompatible
 filetype off
 set noshowmode
+runtime! debian.vim
 
 set rtp+=/home/boris/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -25,6 +26,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'dracula/vim'
 "Plugin 'sheerun/vim-polyglot'
+Plugin 'fatih/vim-hclfmt'
 
 call vundle#end()
 filetype plugin indent on
@@ -35,7 +37,6 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 
 "lo basico
 set encoding=utf-8 nobomb
-runtime! debian.vim
 if has("syntax")
    syntax on
 endif
