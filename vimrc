@@ -58,8 +58,8 @@ set formatoptions-=t
 " Cambia en font en GUI
 if has('gui_running')
   set background=dark
-  set guifont=Source\ Code\ Pro:h10
-  colorscheme codeschool
+  set guifont=Meslo\ LG\ S\ for\ Powerline\ Regular\ 10
+  colorscheme gruvbox
   map <C-q> :NERDTreeToggle<CR>
 else
   set background=dark
