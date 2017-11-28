@@ -61,6 +61,7 @@ if has('gui_running')
   set guifont=Meslo\ LG\ S\ for\ Powerline\ Regular\ 10
   colorscheme gruvbox
   map <C-q> :NERDTreeToggle<CR>
+  set guioptions=-M
 else
   set background=dark
   colorscheme gruvbox
