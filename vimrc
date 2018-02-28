@@ -66,7 +66,7 @@ if has('gui_running')
   set guioptions=-M
 else
   set background=dark
-  colorscheme nord
+  colorscheme gruvbox
 endif
 
 "muestra 5 lineas arriba y abajo
@@ -153,3 +153,8 @@ let vim_markdown_preview_browser='Google Chrome'
 let g:hcl_fmt_autosave = 0
 let g:tf_fmt_autosave = 0
 let g:nomad_fmt_autosave = 0
+
+" Nord config
+let g:nord_comment_brightness = 15
+let g:nord_italic = 1
+let g:nord_italic_comments = 1
