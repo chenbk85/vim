@@ -27,6 +27,8 @@ Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'dracula/vim'
 "Plugin 'sheerun/vim-polyglot'
 Plugin 'fatih/vim-hclfmt'
+Plugin 'hashivim/vim-vaultproject'
+Plugin 'arcticicestudio/nord-vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -64,7 +66,7 @@ if has('gui_running')
   set guioptions=-M
 else
   set background=dark
-  colorscheme gruvbox
+  colorscheme nord
 endif
 
 "muestra 5 lineas arriba y abajo
