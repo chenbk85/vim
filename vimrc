@@ -65,8 +65,10 @@ if has('gui_running')
   map <C-q> :NERDTreeToggle<CR>
   set guioptions=-M
 else
+  syntax on
   set background=dark
   colorscheme gruvbox
+  "colorscheme dracula
 endif
 
 "muestra 5 lineas arriba y abajo
@@ -158,3 +160,6 @@ let g:nomad_fmt_autosave = 0
 let g:nord_comment_brightness = 15
 let g:nord_italic = 1
 let g:nord_italic_comments = 1
+
+" YAML syntax
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
