@@ -61,14 +61,14 @@ set formatoptions-=t
 if has('gui_running')
   set background=dark
   set guifont=Meslo\ LG\ S\ for\ Powerline\ Regular\ 10
-  colorscheme gruvbox
+  colorscheme dracula
   map <C-q> :NERDTreeToggle<CR>
   set guioptions=-M
 else
-  syntax on
   set background=dark
-  colorscheme gruvbox
+  "colorscheme gruvbox
   "colorscheme dracula
+  colorscheme nord
 endif
 
 "muestra 5 lineas arriba y abajo
@@ -163,3 +163,11 @@ let g:nord_italic_comments = 1
 
 " YAML syntax
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+" Invisibles
+set list
+set listchars=eol:¬,space:·
+highlight WhiteSpaceBol guifg=red
+highlight WhiteSpaceMol guifg=white
+match WhiteSpaceMol / /
+2match WhiteSpaceBol /^ \+/
