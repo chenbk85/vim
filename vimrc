@@ -133,7 +133,7 @@ map <leader>jj <Esc>:%!python -m json.tool<CR>
 "set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts=1
-let g:airline_theme='solarized'
+let g:airline_theme='bubblegum'
 "" Move between buffers
 map <C-l> :bn<CR>
 map <C-h> :bp<CR>
@@ -165,9 +165,9 @@ let g:nord_italic_comments = 1
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 " Invisibles
-set list
-set listchars=eol:¬,space:·
-highlight WhiteSpaceBol guifg=red
-highlight WhiteSpaceMol guifg=white
-match WhiteSpaceMol / /
-2match WhiteSpaceBol /^ \+/
+"set list
+"set listchars=eol:¬,space:·,trail:~,extends:>,precedes:<
+"highlight WhiteSpaceBol guifg=red
+"highlight WhiteSpaceMol guifg=white
+"match WhiteSpaceMol / /
+"2match WhiteSpaceBol /^ \+/
